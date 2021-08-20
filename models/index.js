@@ -3,7 +3,8 @@ const Post = require('./Post');
 
 User.hasMany(Post, {
   foreignKey: 'user_id',
-  onDelete: 'CASCADE'
+  onDelete: 'CASCADE',
+  hooks:true
 });
 
 Post.belongsTo(User, {
