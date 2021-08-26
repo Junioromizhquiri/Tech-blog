@@ -5,8 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "seed": "node seeds/seed.js"
+    "start": "node server.js",
+    "seed": "node seeds/seed.js",
+    "heroku-postbuild": "npm run seed"
   },
   "keywords": [],
   "author": "",
@@ -18,9 +19,8 @@
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
     "express-session": "^1.17.1",
-    "heroku": "^7.57.0",
     "mysql2": "^2.2.5",
-    "sequelize": "^6.6.5"
+    "sequelize": "^6.3.5"
   },
   "devDependencies": {
     "eslint": "^7.12.1",
